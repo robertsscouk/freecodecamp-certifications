@@ -1,10 +1,14 @@
 def arithmetic_arranger(maths_problems, answers):
-
+    '''
+    input a list of arithmetic problems and then have the option to produce the answers
+    '''
+    
     list = []
 
     for i in maths:
         list.append(i.split())
 
+    # store the answers in a list
     answer_list = []
 
     for i in list:
@@ -15,7 +19,7 @@ def arithmetic_arranger(maths_problems, answers):
         else:
              answer_list.append(first_number-second_number)
 
-    #formatting
+    # create the formatting to display the arithmetic problems
     count = 0
     for i in list:
           print(i[0], end ="\n")
